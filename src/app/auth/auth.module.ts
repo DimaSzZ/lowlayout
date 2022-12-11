@@ -1,10 +1,11 @@
-import { NgModule } from '@angular/core';
+import {NgModule, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RegisterComponent} from "./register/register.component";
 import {LoginComponent} from "./login/login.component";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BrowserModule} from "@angular/platform-browser";
 import {AppRoutingModule} from "../app-routing.module";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -16,8 +17,10 @@ import {AppRoutingModule} from "../app-routing.module";
     CommonModule,
     FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  exports: [RegisterComponent,LoginComponent]
+  exports: [RegisterComponent,LoginComponent,HttpClientModule]
 })
-export class AuthModule { }
+export class AuthModule {}
