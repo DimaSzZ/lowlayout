@@ -1,9 +1,9 @@
-import {Shoes} from "./shoes";
-
-export interface User{
-  Name:string,
-  SecondName:string,
-  Email:string,
-  Password:string,
-  Phone:string,
+export class User{
+  Id:number;
+  Name:string;
+  Admin:boolean;
+  SecondName:string;
+  Email:string;
+  Password:string;
+  Phone:string;
 }
