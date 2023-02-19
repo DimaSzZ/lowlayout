@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import {SearchComponent} from "../search/search.component";
 
 
+
 @NgModule({
   declarations: [
     AdminDashboardComponent,
@@ -21,11 +22,11 @@ import {SearchComponent} from "../search/search.component";
     HomeComponent,
     FooterComponent,
     HeaderComponent,
-    SearchComponent
+    SearchComponent,
   ],
   imports: [
     CommonModule,
-    AdminRoutingModule
-  ]
+    AdminRoutingModule,
+  ],
 })
 export class AdminModule { }

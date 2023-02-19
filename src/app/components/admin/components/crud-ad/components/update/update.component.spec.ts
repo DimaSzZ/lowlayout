@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CudAdComponent } from './cud-ad.component';
+import { UpdateComponent } from './update.component';
 
-describe('CudAdComponent', () => {
-  let component: CudAdComponent;
-  let fixture: ComponentFixture<CudAdComponent>;
+describe('UpdateComponent', () => {
+  let component: UpdateComponent;
+  let fixture: ComponentFixture<UpdateComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CudAdComponent ]
+      declarations: [ UpdateComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CudAdComponent);
+    fixture = TestBed.createComponent(UpdateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

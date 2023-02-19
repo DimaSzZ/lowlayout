@@ -14,11 +14,11 @@ export class AuthService {
   }
 
   register(user: User){
-    return  this.http.post('https://localhost:7278/BackUser/Registration', user)
+    return  this.http.post('https://localhost:44324/api/auth/registration', user)
   }
 
   login(Email:string,Password:string) {
-    return this.http.post('https://localhost:7278/BackUser/Auth',{Email,Password})
+    return this.http.post('https://localhost:44324/api/auth/login',{Email,Password})
   }
 
   isAuthenticated(): boolean {
